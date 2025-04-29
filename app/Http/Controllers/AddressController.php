@@ -16,6 +16,7 @@ class AddressController extends Controller
     public function index(ListAddress $action)
     {
         try {
+
             $address = $action->handle();
 
             return response()->json([
